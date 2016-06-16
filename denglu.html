@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>团购后台管理系统</title>
+<link href="htcss/styles.css" rel="stylesheet">
+<script type="text/javascript" src="htcss/function.js"></script>
+<script type="text/javascript" src="http://www.coding123.net/getip.ashx?js=1"></script>
+<style>
+body{
+background:#eaedf2;	
+}
+</style>
+</head>
+
+<body>
+<div class="login">
+	<div class="login_title">欢迎您登录团购后台管理系统</div>
+	  <form id="form1" name="form1" action="login.php" method="post" onsubmit="return checklogin(this)">	 
+      <table cellspacing="0" cellpadding="0" class="mt10">
+        <tr>
+          <td width="29%" class="td_right">帐 号　</td>
+          <td>
+            <input name="name" type="text" size="25" />
+          </td>
+        </tr>
+        <tr>
+          <td class="td_right">密 码　</td>
+          <td align="left" valign="middle"><input name="password" type="password" size="25" /></td>
+        </tr>
+         <tr>
+          <td width="29%" class="td_right">地 址　</td>
+          <td>
+            <input name="gip" type="text" size="25" /></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td><input type="submit" name="sub" value="登 录" class="login_btn" /></td>
+        </tr>
+      </table>
+      </form>
+<script>
+form1.gip.value=ip.substr(1,ip.length-1); 
+</script>
+</div>
+ 
+</body>
+</html>
